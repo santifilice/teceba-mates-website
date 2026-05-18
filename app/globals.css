@@ -1,0 +1,157 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Teceba Mates - Warm artisanal Argentine palette */
+  --background: #D7BD9E;
+  --foreground: #2c1810;
+  --card: #D7BD9E;
+  --card-foreground: #2c1810;
+  --popover: #D7BD9E;
+  --popover-foreground: #2c1810;
+  --primary: #6b1d1d;
+  --primary-foreground: #D7BD9E;
+  --secondary: #d4a853;
+  --secondary-foreground: #2c1810;
+  --muted: #e8d9c0;
+  --muted-foreground: #6b5a48;
+  --accent: #8b2f2f;
+  --accent-foreground: #D7BD9E;
+  --destructive: #8b2f2f;
+  --destructive-foreground: #D7BD9E;
+  --border: #c4a882;
+  --input: #c4a882;
+  --ring: #6b1d1d;
+  --radius: 0.5rem;
+
+  /* Custom brand tokens */
+  --parchment: #f5ead6;
+  --parchment-dark: #e8d9c0;
+  --brown-dark: #2c1810;
+  --brown-medium: #5a3e2b;
+  --burgundy: #6b1d1d;
+  --burgundy-light: #8b2f2f;
+  --mate-red: #a03030;
+  --cream: #D7BD9E;
+  --gold-old: #d4a853;
+  --gold-dark: #b08930;
+  --black-soft: #1a1210;
+}
+
+@theme inline {
+  --font-sans: 'Playfair Display', 'Georgia', serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Brand colors */
+  --color-parchment: var(--parchment);
+  --color-parchment-dark: var(--parchment-dark);
+  --color-brown-dark: var(--brown-dark);
+  --color-brown-medium: var(--brown-medium);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-light: var(--burgundy-light);
+  --color-mate-red: var(--mate-red);
+  --color-cream: var(--cream);
+  --color-gold-old: var(--gold-old);
+  --color-gold-dark: var(--gold-dark);
+  --color-black-soft: var(--black-soft);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Vintage paper texture overlay */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--parchment-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brown-medium);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--burgundy);
+}
+
+/* Ornament divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-old), transparent);
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
