@@ -158,6 +158,74 @@ const categories: Category[] = [
       },
     ],
   },
+  {
+    id: "yerberos-azucareros",
+    title: "Yerberos y Azucareros",
+    subtitle: "Complementos esenciales para mantener tu mate listo en cualquier lugar.",
+    products: [
+      {
+        id: "yerbero-cuero",
+        name: "Yerbero de Cuero",
+        description:
+          "Yerbero artesano con cierre de cuero, ideal para llevar yerba fresca y protegerla de la humedad.",
+        price: 11200,
+        image: "/images/products/yerbera.jpg",
+        badge: "Nuevo",
+      },
+      {
+        id: "azucarera-ceramica",
+        name: "Azucarera Ceramica",
+        description:
+          "Azucarera decorativa de cerámica con tapa ajustable. Diseño tradicional para tu mesa matera.",
+        price: 7200,
+        image: "/images/products/canasta-matera.jpg",
+        badge: null,
+      },
+      {
+        id: "kit-yerbera-azucarera",
+        name: "Kit Yerbera y Azucarera",
+        description:
+          "Set completo para tu kit matero, con yerbera y azucarera combinadas en presentacion artesanal.",
+        price: 15800,
+        image: "/images/products/kit-matero.jpg",
+        badge: "Oferta",
+      },
+    ],
+  },
+  {
+    id: "termos",
+    title: "Termos",
+    subtitle: "Termos resistentes para mantener tu agua caliente y disfrutar del mate donde vayas.",
+    products: [
+      {
+        id: "termo-inoxidable",
+        name: "Termo Inoxidable",
+        description:
+          "Termo de acero inoxidable con cierre hermético. Conserva temperaturas por horas.",
+        price: 16200,
+        image: "/images/products/kit-matero.jpg",
+        badge: null,
+      },
+      {
+        id: "termo-campestre",
+        name: "Termo Campestre",
+        description:
+          "Termo con detalles rústicos y doble pared. Ideal para viaje, trabajo o excursiones.",
+        price: 17500,
+        image: "/images/products/canasta-cuero.jpg",
+        badge: "Recomendado",
+      },
+      {
+        id: "termo-compacto",
+        name: "Termo Compacto",
+        description:
+          "Termo compacto y ligero para el mate diario. Cabe fácilmente en tu mochila matera.",
+        price: 13500,
+        image: "/images/products/mate-imperial.jpg",
+        badge: null,
+      },
+    ],
+  },
 ]
 
 function formatPrice(price: number): string {
@@ -266,8 +334,7 @@ export default function ProductsSection() {
             <div className="h-px w-16 bg-gold-old" />
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-brown-medium">
-            Cada mate es una pieza unica. Explora nuestra coleccion de mates,
-            bombillas, canastas y yerbas.
+            Explore nuestra colección de mates, bombillas y bombillones, canastas, yerbas, yerberos y azucareros y termos.
           </p>
         </div>
 
