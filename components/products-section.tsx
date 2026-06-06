@@ -28,64 +28,63 @@ const categories: Category[] = [
     subtitle: "Cada mate es una pieza unica, tallada con la paciencia del artesano y el alma del campo argentino.",
     products: [
       {
-        id: "mate-imperial",
-        name: "Mate Imperial Bordo",
+        id: "imperial-calabaza-lizo",
+        name: "IMPERIAL DE CALABAZA LIZO",
         description:
-          "Mate artesanal de calabaza con virola de alpaca cincelada. Acabado bordo premium con detalles grabados a mano.",
-        price: 18500,
-        image: "/images/products/mate-imperial.jpg",
-        badge: "Mas Vendido",
-      },
-      {
-        id: "mate-camionero",
-        name: "Mate Camionero Tradicional",
-        description:
-          "El clasico mate camionero con boca ancha. Ideal para el cebador experto. Cuero cosido a mano.",
-        price: 14200,
-        image: "/images/products/mate-camionero.jpg",
+          "Mate calabaza revestido en cuero con virola de acero y guarda de alpaca cincelada.",
+        price: 25800,
+        image: "/images/foto 1.jpeg",
         badge: null,
       },
       {
-        id: "mate-cuero",
-        name: "Mate Cuero Premium",
+        id: "torpedo-calabaza-cincelado",
+        name: "TORPEDO DE CALABAZA CINCELADO",
         description:
-          "Envuelto en cuero curtido con guarda pampa. Base reforzada y virola de alpaca labrada.",
-        price: 22800,
-        image: "/images/products/mate-cuero.jpg",
-        badge: "Premium",
+          "Mate torpedo revestido en cuero repujado con base reforzada en alpaca y virola de alpaca cincelada.",
+        price: 42000,
+        image: "/images/foto 2.jpeg",
+        badge: null,
+      },
+      {
+        id: "imperial-algarrobo-alpaca",
+        name: "IMPERIAL DE ALGARROBO CON VIROLA DE ALPACA",
+        description:
+          "Mate imperial de algarrobo con virol de acero y guarda de alpaca cincelada.",
+        price: 20000,
+        image: "/images/foto 3.jpeg",
+        badge: null,
+      },
+      {
+        id: "imperial-algarrobo-acero",
+        name: "IMPERIAL DE ALGARROBO CON VIROLA DE ACERO",
+        description:
+          "Mate imperial de algarrobo con virola y guarda de acero.",
+        price: 16200,
+        image: "/images/foto 4.jpeg",
+        badge: null,
+      },
+      {
+        id: "camionero-calabaza",
+        name: "CAMIONERO DE CALABAZA",
+        description:
+          "Mate de calabaza estilo camionero revestido en cuero con virola de acero.",
+        price: 18360,
+        image: "/images/foto 7.jpeg",
+        badge: null,
       },
     ],
   },
   {
     id: "bombillas",
-    title: "Bombillas y Bombillones",
+    title: "Bombillas",
     subtitle: "Bombillas de alpaca labrada y bombillones criollos, hechos para durar toda la vida.",
     products: [
       {
-        id: "bombilla-alpaca",
-        name: "Bombilla Alpaca Labrada",
-        description:
-          "Bombilla de alpaca con grabados criollos. Desmontable para facil limpieza. Pico recto.",
-        price: 8500,
-        image: "/images/products/bombilla-alpaca.jpg",
-        badge: null,
-      },
-      {
-        id: "bombillon-criollo",
-        name: "Bombillon Criollo",
-        description:
-          "Bombillon grueso de alpaca con grabado artesanal. Ideal para mates grandes y camioneros.",
-        price: 11200,
-        image: "/images/products/bombillon-criollo.jpg",
-        badge: "Nuevo",
-      },
-      {
-        id: "bombilla-pico-loro",
-        name: "Bombilla Pico de Loro",
-        description:
-          "Clasica bombilla pico de loro de alpaca. Punta curva para mejor cebado. Grabados finos.",
-        price: 9800,
-        image: "/images/products/bombilla-pico-loro.jpg",
+        id: "bombilla-pico-de-loro",
+        name: "BOMBILLA PICO DE LORO",
+        description: "Bombilla de acero con pico de loro.",
+        price: 5200,
+        image: "/images/foto 6.jpeg",
         badge: null,
       },
     ],
@@ -96,64 +95,11 @@ const categories: Category[] = [
     subtitle: "Canastas materas para llevar todo lo que necesitas a donde vayas.",
     products: [
       {
-        id: "canasta-matera",
-        name: "Canasta Matera Mimbre",
-        description:
-          "Canasta tejida a mano con mimbre y tientos de cuero. Espacio para termo, mate, yerbera y azucarera.",
-        price: 25600,
-        image: "/images/products/canasta-matera.jpg",
-        badge: "Artesanal",
-      },
-      {
-        id: "canasta-cuero",
-        name: "Canasta de Cuero Premium",
-        description:
-          "Matera de cuero repujado con compartimentos. Hebillas de bronce antiguo. Guarda pampa grabada.",
-        price: 34500,
-        image: "/images/products/canasta-cuero.jpg",
-        badge: "Premium",
-      },
-      {
-        id: "kit-matero",
-        name: "Kit Matero Completo",
-        description:
-          "Incluye mate, bombilla, yerbera y azucarera. Todo en caja de madera artesanal. El regalo perfecto.",
-        price: 38900,
-        image: "/images/products/kit-matero.jpg",
-        badge: "Oferta",
-      },
-    ],
-  },
-  {
-    id: "yerbas",
-    title: "Yerbas",
-    subtitle: "Yerbas seleccionadas para acompanar tus mates con el mejor sabor.",
-    products: [
-      {
-        id: "yerba-tradicional",
-        name: "Yerba Tradicional Premium",
-        description:
-          "Blend artesanal de yerba mate con estacionamiento natural de 12 meses. Sabor intenso y equilibrado.",
-        price: 6800,
-        image: "/images/products/yerba-tradicional.jpg",
-        badge: null,
-      },
-      {
-        id: "yerba-serrana",
-        name: "Yerba Serrana de Montana",
-        description:
-          "Yerba mate serrana con hierbas de las sierras mendocinas. Peperina, menta y poleo del campo.",
-        price: 7500,
-        image: "/images/products/yerba-serrana.jpg",
-        badge: "Edicion Limitada",
-      },
-      {
-        id: "yerbera",
-        name: "Yerbera de Cuero",
-        description:
-          "Yerbera artesanal de cuero repujado con cierre de bronce antiguo. Guarda pampa grabada a mano.",
-        price: 12600,
-        image: "/images/products/yerbera.jpg",
+        id: "canasta-simil-cuero",
+        name: "CANASTA SIMIL CUERO",
+        description: "Canasta revestida en simil cuero reforzada.",
+        price: 11900,
+        image: "/images/foto 9.jpeg",
         badge: null,
       },
     ],
@@ -164,31 +110,12 @@ const categories: Category[] = [
     subtitle: "Complementos esenciales para mantener tu mate listo en cualquier lugar.",
     products: [
       {
-        id: "yerbero-cuero",
-        name: "Yerbero de Cuero",
-        description:
-          "Yerbero artesano con cierre de cuero, ideal para llevar yerba fresca y protegerla de la humedad.",
-        price: 11200,
-        image: "/images/products/yerbera.jpg",
-        badge: "Nuevo",
-      },
-      {
-        id: "azucarera-ceramica",
-        name: "Azucarera Ceramica",
-        description:
-          "Azucarera decorativa de cerámica con tapa ajustable. Diseño tradicional para tu mesa matera.",
-        price: 7200,
-        image: "/images/products/canasta-matera.jpg",
+        id: "set-yerbera-azucarera",
+        name: "SET YERBERA Y AZUCARERA",
+        description: "Set de yerbera y azucarera hechos de simil cuero.",
+        price: 6000,
+        image: "/images/foto 5.jpeg",
         badge: null,
-      },
-      {
-        id: "kit-yerbera-azucarera",
-        name: "Kit Yerbera y Azucarera",
-        description:
-          "Set completo para tu kit matero, con yerbera y azucarera combinadas en presentacion artesanal.",
-        price: 15800,
-        image: "/images/products/kit-matero.jpg",
-        badge: "Oferta",
       },
     ],
   },
@@ -198,30 +125,11 @@ const categories: Category[] = [
     subtitle: "Termos resistentes para mantener tu agua caliente y disfrutar del mate donde vayas.",
     products: [
       {
-        id: "termo-inoxidable",
-        name: "Termo Inoxidable",
-        description:
-          "Termo de acero inoxidable con cierre hermético. Conserva temperaturas por horas.",
-        price: 16200,
-        image: "/images/products/kit-matero.jpg",
-        badge: null,
-      },
-      {
-        id: "termo-campestre",
-        name: "Termo Campestre",
-        description:
-          "Termo con detalles rústicos y doble pared. Ideal para viaje, trabajo o excursiones.",
-        price: 17500,
-        image: "/images/products/canasta-cuero.jpg",
-        badge: "Recomendado",
-      },
-      {
-        id: "termo-compacto",
-        name: "Termo Compacto",
-        description:
-          "Termo compacto y ligero para el mate diario. Cabe fácilmente en tu mochila matera.",
-        price: 13500,
-        image: "/images/products/mate-imperial.jpg",
+        id: "termo-media-manija-pico-cebador-1l",
+        name: "TERMO MEDIA MANIJA CON PICO CEBADOR 1L",
+        description: "Termo media manija gris con pico cebador. Duración de 24hs.",
+        price: 24650,
+        image: "/images/foto 8.jpeg",
         badge: null,
       },
     ],
