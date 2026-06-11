@@ -73,7 +73,7 @@ export default function Footer() {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="https://wa.me/5492615389556?text=Hola!%20Quiero%20consultar%20por%20los%20mates%20TECEBA"
+                href="https://wa.me/5492617705282?text=Hola!%20Quiero%20consultar%20por%20los%20mates%20TECEBA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-sm border border-cream/20 text-cream/60 transition-all hover:border-gold-old hover:bg-gold-old/10 hover:text-gold-old"
@@ -86,7 +86,7 @@ export default function Footer() {
             </div>
             <div className="mt-6 text-center lg:text-left">
               <p className="text-xs text-cream/40">teceba.mates03@gmail.com</p>
-              <p className="mt-1 text-xs text-cream/40">+54 9 261 538-9556</p>
+              <p className="mt-1 text-xs text-cream/40">+54 9 261 770-5282</p>
               <p className="mt-1 text-xs text-cream/40">Mendoza, Argentina</p>
             </div>
           </div>

@@ -144,7 +144,7 @@ export default function CartDrawer() {
               </span>
             </div>
             <a
-              href={`https://wa.me/5492615389556?text=${encodeURIComponent(
+              href={`https://wa.me/5492617705282?text=${encodeURIComponent(
                 `Hola! Quiero comprar:\n${items
                   .map(
                     (i) =>

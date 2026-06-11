@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Teléfono",
-    value: "+54 9 261 538-9556",
-    href: "tel:+5492615389556",
+    value: "+54 9 261 770-5282",
+    href: "tel:+5492617705282",
   },
   {
     icon: Mail,
@@ -122,7 +122,7 @@ export default function ContactSection() {
               </div>
               <div className="mt-6 flex justify-center">
                 <a
-                  href="https://wa.me/5492615389556?text=Hola!%20Quiero%20consultar%20por%20los%20mates%20TECEBA"
+                  href="https://wa.me/5492617705282?text=Hola!%20Quiero%20consultar%20por%20los%20mates%20TECEBA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-sm bg-burgundy px-6 py-4 text-sm font-bold uppercase tracking-wider text-cream shadow-lg transition hover:bg-burgundy-light hover:shadow-xl"
