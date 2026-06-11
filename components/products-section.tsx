@@ -5,6 +5,15 @@ import Image from "next/image"
 import { ShoppingCart, Plus } from "lucide-react"
 import { useCart } from "@/lib/cart-context"
 
+function OutOfStockCross() {
+  return (
+    <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+      <div className="absolute h-4 w-[150%] bg-red-600 opacity-70 rotate-45" />
+      <div className="absolute h-4 w-[150%] bg-red-600 opacity-70 -rotate-45" />
+    </div>
+  )
+}
+
 type Product = {
   id: string
   name: string
@@ -164,6 +173,7 @@ function ProductCard({ product }: { product: Product }) {
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        {(product.id === "torpedo-calabaza-cincelado" || product.id === "imperial-algarrobo-acero") && <OutOfStockCross />}
         {/* Overlay on hover */}
         <div className="absolute inset-0 flex items-center justify-center bg-brown-dark/0 transition-all duration-300 group-hover:bg-brown-dark/30">
           <button
@@ -192,10 +202,17 @@ function ProductCard({ product }: { product: Product }) {
         <p className="mt-2 flex-1 text-sm leading-relaxed text-brown-medium/80">
           {product.description}
         </p>
-        <div className="mt-4 flex items-center justify-between">
-          <span className="text-2xl font-black text-burgundy">
-            {formatPrice(product.price)}
-          </span>
+        <div className="mt-4 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl font-black text-burgundy">
+              {formatPrice(product.price)}
+            </span>
+            {(product.id === "torpedo-calabaza-cincelado" || product.id === "imperial-algarrobo-acero") && (
+              <span className="text-sm font-black uppercase tracking-[0.4em] text-red-700">
+                sin stock
+              </span>
+            )}
+          </div>
           <button
             onClick={() =>
               addItem({

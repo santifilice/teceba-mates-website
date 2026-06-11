@@ -4,23 +4,23 @@ import Image from "next/image"
 
 const galleryImages = [
   {
-    src: "/images/gallery/gallery-1.jpg",
-    alt: "Cebando mate con agua caliente",
+    src: "/images/torpedo%20bordo.jpeg",
+    alt: "Torpedo bordo",
     span: "col-span-1 row-span-2",
   },
   {
-    src: "/images/gallery/gallery-2.jpg",
-    alt: "Ronda de mate al atardecer en Mendoza",
+    src: "/images/torpedo%20bordo%20monta%C3%B1a.jpeg",
+    alt: "Torpedo bordo montaña",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gallery/gallery-3.jpg",
-    alt: "Artesano tallando un mate",
+    src: "/images/torpedo%20facha%20con%20termo.jpeg",
+    alt: "Torpedo facha con termo",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gallery/gallery-4.jpg",
-    alt: "Coleccion de mates artesanales",
+    src: "/images/mate-calabaza.jpeg",
+    alt: "Mate calabaza",
     span: "col-span-2 row-span-1",
   },
 ]
@@ -59,12 +59,6 @@ export default function GallerySection() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              <div className="absolute bottom-0 left-0 right-0 translate-y-4 p-6 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="text-sm font-medium tracking-wide text-cream">
-                  {img.alt}
-                </p>
-              </div>
             </div>
           ))}
         </div>

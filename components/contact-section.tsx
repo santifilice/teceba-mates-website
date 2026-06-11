@@ -1,6 +1,6 @@
 "use client"
 
-import { MapPin, Phone, Mail, Instagram, Clock, Package } from "lucide-react"
+import { MapPin, Phone, Instagram, Clock, Package, Share2 } from "lucide-react"
 
 const contactInfo = [
   {
@@ -15,10 +15,10 @@ const contactInfo = [
     href: "tel:+5492617705282",
   },
   {
-    icon: Mail,
-    label: "Email",
-    value: "teceba.mates03@gmail.com",
-    href: "mailto:teceba.mates03@gmail.com",
+    icon: Share2,
+    label: "TIKTOK",
+    value: "@teceba_mates_mdz",
+    href: "https://www.tiktok.com/@teceba_mates_mdz",
   },
   {
     icon: Clock,
